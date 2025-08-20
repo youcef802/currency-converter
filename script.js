@@ -21,3 +21,11 @@ document.getElementById('resetBtn').addEventListener('click', () => {
   document.getElementById('amount').value = '';
   document.getElementById('result').innerText = '';
 });
+// مثال مبسّط
+const history = [];
+function convert() {
+  // الحساب ...
+  const converted = amount * rate; // مثال
+  history.unshift(`${amount} ${from} -> ${converted.toFixed(2)} ${to}`);
+  // عرض history مكان ما: console.log(history) أو DOM
+}

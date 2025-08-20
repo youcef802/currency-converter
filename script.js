@@ -17,3 +17,7 @@ function convert() {
     result.innerText = `💰 ${amount} ${from} = ${converted.toFixed(2)} ${to}`;
   }
 }
+document.getElementById('resetBtn').addEventListener('click', () => {
+  document.getElementById('amount').value = '';
+  document.getElementById('result').innerText = '';
+});
